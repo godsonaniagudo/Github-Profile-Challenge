@@ -232,56 +232,14 @@ function createRepositoryItem(repoDetails) {
   descriptionText.innerHTML = repoDetails.description;
   lastUpdatedText.innerHTML = lastUpdateText;
   starCountText.innerHTML = "Star";
-  starIcon.src = "../assets/images/greystar.svg";
+  starIcon.src = "/assets/images/greystar.svg";
 
   titleText.href = "#";
 
   document.getElementById("repoListContainer").prepend(container);
 }
 
-// const query = `
-// query {
-//   user(login : "godsonaniagudo"){
-//     name
-//     bio
-//     login
-//     location
-//     followers {
-//       totalCount
-//     }
-//     following {
-//       totalCount
-//     }
-//     starredRepositories {
-//       totalCount
-//     }
 
-//     repositories (last : 20){
-//       totalCount
-//       nodes {
-//         descriptionHTML
-//         name
-//         updatedAt
-//         viewerHasStarred
-//         isPrivate
-//         primaryLanguage {
-//           name
-//         }
-//       }
-//     }
-//   }
-// }`
-
-// fetch("https://api.github.com/graphql", {
-//   method: "POST",
-//   headers: {
-//     "Content-Type": "application/json",
-//     Accept: "application/json",
-//   },
-//   body: JSON.stringify({
-//     query,
-//   }),
-// });
 
 //Handle hamburger menu click
 let showMenu = false;
