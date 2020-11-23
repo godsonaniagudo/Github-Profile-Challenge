@@ -232,7 +232,7 @@ function createRepositoryItem(repoDetails) {
   descriptionText.innerHTML = repoDetails.description;
   lastUpdatedText.innerHTML = lastUpdateText;
   starCountText.innerHTML = "Star";
-  starIcon.src = "/assets/images/greystar.svg";
+  starIcon.src = "https://res.cloudinary.com/theunfreed/image/upload/v1606102206/greystar_pqef5z.svg";
 
   titleText.href = "#";
 
