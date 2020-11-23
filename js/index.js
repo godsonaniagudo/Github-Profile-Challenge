@@ -226,6 +226,8 @@ function createRepositoryItem(repoDetails) {
       months[updatedDate.getMonth()]
     } ${updatedDate.getDate()} `;
   }
+  
+  
 
   titleText.innerHTML = repoDetails.name;
   privacyStatus.innerHTML = repoDetails.isPrivate ? "Private" : "";
