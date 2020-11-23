@@ -1,0 +1,1457 @@
+@font-face
+{
+	font-family: 'Segoe UI Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Segoe UI Regular'), url('Segoe UI.woff') format('woff');
+}
+
+@font-face
+{
+	font-family: 'Segoe UI Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Segoe UI Bold'), url('Segoe UI Bold.woff') format('woff');
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus
+{
+	outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+span,
+textarea,
+a
+{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+footer .footerContent
+{
+	align-items: center;
+	display: flex;
+	font-size: 12px;
+	justify-content: space-between;
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+}
+
+footer a
+{
+	color: #0366D6;
+	text-decoration: none;
+}
+
+footer a:hover
+{
+	text-decoration: underline;
+}
+
+footer div div
+{
+	align-items: center;
+	display: flex;
+}
+
+footer div p
+{
+	color: #7C8083;
+}
+
+footer svg
+{
+	cursor: pointer;
+	fill: #D1D5DA;
+}
+
+footer svg:hover
+{
+	fill: #7c7e81;
+}
+
+hr
+{
+	background-color: rgba(0, 0, 0, 0);
+	border-color: rgb(228, 228, 228);
+	border-top-style: none;
+	height: 0px;
+}
+
+html body
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav
+{
+	background-color: #24292E;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 24px;
+	padding: 0.9rem;
+	padding-left: 1rem;
+	padding-right: 2rem;
+}
+
+nav div
+{
+	align-items: center;
+}
+
+nav div input
+{
+	background-color: rgba(0, 0, 0, 0);
+	border-radius: 5px;
+	border-style: none;
+	margin-left: 0.5rem;
+	padding: 0.3rem;
+	transition-duration: 0.2s;
+	transition-property: width;
+	width: 200px;
+}
+
+nav div input::placeholder
+{
+	color: rgb(211, 211, 211);
+	font-weight: 200;
+}
+
+nav div a
+{
+	color: white;
+	font-family: Segoe UI Regular;
+	font-size: 14px;
+	font-weight: 600;
+	margin-left: 1rem;
+	text-decoration: none;
+}
+
+nav div a:hover
+{
+	color: rgb(199, 199, 199);
+}
+
+nav div .searchDiv
+{
+	align-self: center;
+	border-color: rgb(68, 77, 86);
+	border-radius: 5px;
+	border-style: none;
+	border-style: solid;
+	border-width: 0.2px;
+}
+
+nav div .searchDiv input:focus
+{
+	background-color: white;
+	margin: 0px;
+	width: 400px;
+}
+
+nav div .searchDiv input:focus+p
+{
+	display: none;
+}
+
+nav div .searchDiv p
+{
+	border-color: rgb(68, 77, 86);
+	border-radius: 5px;
+	border-style: none;
+	border-style: solid;
+	border-width: 0.2px;
+	color: rgb(68, 77, 86);
+	font-size: 12px;
+	margin: 0px;
+	margin-right: 0.5rem;
+	padding: 0.1rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+nav svg
+{
+	cursor: pointer;
+	fill: white;
+}
+
+nav svg:hover
+{
+	fill: #D1D5DA;
+}
+
+nav .navicon
+{
+	background-color: white;
+	border-radius: 15px;
+	border-style: none;
+	cursor: pointer;
+	height: 30px;
+	width: 30px;
+}
+
+nav .navicon:hover
+{
+	background-color: #B0B0B0;
+}
+
+nav .topLeftNav .greyHover
+{
+	cursor: pointer;
+}
+
+nav .topLeftNav .greyHover:hover .dropDownIcon
+{
+	border-top-color: #B0B0B0;
+}
+
+nav .topLeftNav .greyHover:hover svg
+{
+	fill: #B0B0B0;
+}
+
+nav .topLeftNav .greyHover.svg:hover
+{
+	fill: #B0B0B0;
+}
+nav .topLeftNav .navDropDownCarets
+{
+	height: 9px;
+	width: 9px;
+}
+nav .topLeftNav .navActionIcons
+{
+	height: 14px;
+	margin-right: 0.3rem;
+	width: 14px;
+}
+nav .topLeftNav .navProfilePic
+{
+	border-radius: 10px;
+	border-style: none;
+	height: 20px;
+	margin-right: 0.3rem;
+	object-fit: cover;
+	width: 20px;
+}
+nav .topLeftNav svg
+{
+	fill: white;
+}
+.primaryGreen
+{
+	background-color: rgb(46, 164, 79);
+}
+.veryLightGrey
+{
+	background-color: #FAFBFC;
+}
+.verticalPadding16
+{
+	padding-bottom: 16px;
+	padding-top: 16px;
+}
+.ml05
+{
+	margin-left: 0.5rem;
+}
+.ml1
+{
+	margin-left: 1rem;
+}
+.mr05
+{
+	margin-right: 0.5rem;
+}
+.mr1
+{
+	margin-right: 1rem;
+}
+.noMargins
+{
+	margin: 0px;
+}
+.midGreyText
+{
+	color: #7C8083;
+}
+.whiteText
+{
+	color: white;
+}
+.flexDisplay
+{
+	display: flex;
+}
+.dotSeparator
+{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+.dropDown
+{
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 105%;
+	width: 550%;
+	z-index: 5000;
+}
+.dropDownContent
+{
+	align-items: flex-start;
+	background-color: white;
+	border-bottom-style: solid;
+	border-color: #e2e2e2;
+	border-left-style: solid;
+	border-radius: 5px;
+	border-right-style: solid;
+	border-width: 1px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+}
+.dropDownContent a
+{
+	color: #24292E;
+	font-weight: normal;
+	margin: 0px;
+}
+.dropDownContent div
+{
+	border-color: #E1E4E8;
+	border-radius: 5px;
+	border-style: none;
+	border-style: solid;
+	border-width: 1px;
+	box-sizing: border-box;
+	display: flex;
+	margin: none !important;
+	padding: 0.3rem;
+	width: 100%;
+}
+.dropDownContent div:hover
+{
+	background-color: white;
+	border-color: #E1E4E8;
+	border-top-color: #E1E4E8;
+	cursor: pointer;
+}
+.dropDownContent div:hover p
+{
+	color: #0366D6;
+}
+.dropDownContent div:hover svg
+{
+	fill: #0366D6 !important;
+}
+.dropDownContent div p
+{
+	color: #959DA5;
+	font-weight: normal !important;
+	margin: 0px !important;
+}
+.dropDownContent div svg
+{
+	fill: #959DA5 !important;
+	margin-right: 0px;
+}
+.dropDownContent hr
+{
+	width: 100%;
+}
+.dropDownContent p
+{
+	font-size: 14px;
+	margin: 0px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.dropDownContent p:nth-child(2)
+{
+	font-weight: 600;
+}
+.dropDownContent section
+{
+	box-sizing: border-box;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	width: 100%;
+}
+.dropDownContent span
+{
+	box-sizing: border-box;
+	padding-bottom: 0.2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.2rem;
+	width: 100%;
+}
+.dropDownContent span:hover
+{
+	background-color: #0366D6;
+}
+.dropDownContent span:hover a
+{
+	color: white;
+}
+.dropDownCaret
+{
+	height: 9px;
+	margin-left: 0.5rem;
+	width: 9px;
+}
+.dropDownIcon
+{
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid white;
+	height: 0;
+	margin-left: 0.2rem;
+	width: 0;
+}
+.dropDownIconUp
+{
+	border-bottom: 5px solid white;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	height: 0;
+	margin-left: 0.2rem;
+	margin-left: auto;
+	margin-right: 10%;
+	width: 0;
+}
+.editProfileDiv
+{
+	display: none;
+	flex-direction: column;
+}
+.editProfileDiv div
+{
+	align-items: center;
+	display: flex;
+}
+.editProfileDiv div, .editProfileDiv textarea
+{
+	margin-bottom: 0.5rem;
+}
+.editProfileDiv input
+{
+	margin-left: 0.5rem;
+}
+.editProfileDiv div input, .editProfileDiv textarea
+{
+	border-color: #e2e2e2;
+	border-radius: 5px;
+	border-style: none;
+	border-style: solid;
+	border-width: 1px;
+	box-sizing: border-box;
+	flex-grow: 1;
+	font-size: 12px;
+	font-weight: 100;
+	padding: 0.5rem;
+	width: 100%;
+}
+.editProfileDiv span
+{
+	font-size: 14px;
+	font-weight: 600;
+}
+.editProfileDiv span span span
+{
+	border-color: #e2e2e2;
+	border-radius: 10px;
+	border-style: none;
+	border-style: solid;
+	border-width: 1px;
+	padding-left: 0.3rem;
+	padding-right: 0.3rem;
+}
+.editProfileDiv svg
+{
+	fill: #6A737D;
+}
+.editProfileDiv .editProfileActionButtonsDiv
+{
+	display: flex;
+	flex-direction: row;
+	margin-top: 0.5rem;
+}
+.editProfileDiv .editProfileActionButtonsDiv button
+{
+	border-radius: 6px;
+	font-size: 12px;
+	font-weight: normal;
+	padding-left: 0.7rem;
+	padding-right: 0.7rem;
+}
+.editProfileDiv .editProfileActionButtonsDiv button:nth-child(1)
+{
+	background-color: #2EA44F;
+	color: white;
+	margin-right: 0.2rem;
+}
+.editProfileDiv .displayBadgeDiv
+{
+	margin-bottom: 1rem;
+}
+.fontWeight200
+{
+	font-weight: 200;
+}
+.fontWeight400
+{
+	font-weight: 400;
+}
+.fontWeight600
+{
+	font-weight: 600;
+}
+.fontWeightBold
+{
+	font-weight: bold;
+}
+.icon16
+{
+	height: 16px;
+	width: 16px;
+}
+.mainContent
+{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 32px;
+	padding-right: 32px;
+	width: 90%;
+}
+.mainContent .mainContentLeft .avatar
+{
+	border-style: none;
+	height: 100%;
+	width: 100%;
+}
+.mainContent .mainContentLeft .avatarDiv div
+{
+	bottom: 15%;
+	left: 86%;
+	position: absolute;
+}
+.mainContent .mainContentLeft .avatarDiv div span
+{
+	align-items: center;
+	background-color: white;
+	border-radius: 16px;
+	display: flex;
+	font-size: 12px;
+	width: 100%;
+}
+.mainContent .mainContentLeft .avatarDiv div span:hover span
+{
+	display: block;
+}
+.mainContent .mainContentLeft .avatarDiv div span span
+{
+	display: none;
+}
+.mainContent .mainContentLeft .avatarDiv div span span:hover
+{
+	color: #0366D6;
+	cursor: pointer;
+}
+.mainContent .mainContentLeft .avatarDiv div svg
+{
+	background-color: white;
+	border-radius: 16px;
+	fill: #586069;
+	margin-right: 0.5rem;
+	padding: 0.5rem;
+}
+.mainContent .mainContentLeft .avatarDiv div svg:hover
+{
+	cursor: pointer;
+	fill: #0366D6;
+}
+.mainContentLeft
+{
+	margin-right: 20px;
+	position: relative;
+	top: -40px;
+	width: 23%;
+}
+.mainContentLeft button
+{
+	background-color: #FAFBFC;
+	border-color: #D9DBDB;
+	border-radius: 7px;
+	border-style: none;
+	border-style: solid;
+	border-width: 1px;
+	cursor: pointer;
+	font-weight: 600;
+	padding: 0.5rem;
+}
+.mainContentLeft button:hover
+{
+	background-color: rgb(243, 243, 243);
+}
+.mainContentLeft .followerdetailsDiv
+{
+	align-items: center;
+	color: rgb(36, 41, 46);
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 14px;
+}
+.mainContentLeft .followerdetailsDiv .followerContainer
+{
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+}
+.mainContentLeft .followerdetailsDiv .followerContainer:hover p
+{
+	color: #037EE2;
+}
+.mainContentLeft .followerdetailsDiv .followerContainer:hover svg
+{
+	fill: #037EE2;
+}
+.mainContentLeft .followerdetailsDiv .followingContainer
+{
+	cursor: pointer;
+	display: flex;
+}
+.mainContentLeft .followerdetailsDiv .followingContainer:hover p
+{
+	color: #037EE2;
+}
+.mainContentLeft .followerdetailsDiv img
+{
+	height: 16px;
+	width: 16px;
+}
+.mainContentLeft .followerdetailsDiv .count
+{
+	margin-right: 0.2rem;
+}
+.mainContentLeft .followerdetailsDiv .starsContainer
+{
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+}
+.mainContentLeft .followerdetailsDiv .starsContainer:hover p
+{
+	color: #037EE2;
+}
+.mainContentLeft .followerdetailsDiv .starsContainer:hover svg
+{
+	fill: #037EE2;
+}
+.mainContentLeft .followerdetailsDiv svg
+{
+	fill: #6A737D;
+	margin-right: 0.2rem;
+}
+.mainContentLeft .highlightsDiv div
+{
+	align-items: center;
+	display: flex;
+}
+.mainContentLeft .highlightsDiv h3
+{
+	font-weight: 600;
+}
+.mainContentLeft .highlightsDiv svg
+{
+	fill: #6A737D;
+}
+.mainContentLeft .highlightsDiv p
+{
+	border-color: #E3E6EA;
+	border-radius: 15px;
+	border-style: none;
+	border-style: solid;
+	border-width: 1px;
+	color: #24292E;
+	font-size: 12px;
+	font-weight: 700;
+	margin-left: 0.5rem;
+	padding-bottom: 0.2rem;
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+	padding-top: 0.2rem;
+}
+.mainContentLeft .locationDiv
+{
+	align-items: center;
+	display: flex;
+	font-size: 14px;
+	margin-bottom: 0.3rem;
+}
+.mainContentLeft .locationDiv a
+{
+	color: #24292E;
+	text-decoration: none;
+}
+.mainContentLeft .locationDiv a:hover
+{
+	color: #0366D6;
+	text-decoration: underline;
+}
+.mainContentLeft .locationDiv svg
+{
+	fill: #6A737D;
+	margin-right: 0.4rem;
+}
+.mainContentLeft .locationDiv p
+{
+	color: #24292E;
+	margin: 0px;
+}
+.mainContentLeft h1,
+h3
+{
+	color: rgb(36, 41, 46);
+	margin: 0px;
+}
+.mainContentLeft h1
+{
+	font-size: 26px;
+	font-weight: 600;
+}
+.mainContentLeft h3
+{
+	font-size: 20px;
+	font-weight: 200;
+}
+.mainContentRight
+{
+	width: 75%;
+}
+.mainContentRight .filterDiv
+{
+	display: flex;
+	width: 100%;
+}
+.mainContentRight .filterDiv .filter
+{
+	align-items: center;
+	border-color: #E1E4E8;
+	border-radius: 5px;
+	border-style: none;
+	border-style: solid;
+	border-width: 1px;
+	cursor: pointer;
+	display: flex;
+	font-size: 14px;
+	font-weight: 600;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.mainContentRight .filterDiv .filter label
+{
+	cursor: pointer;
+}
+.mainContentRight .filterDiv .filter.primaryGreen:hover
+{
+	background-color: rgb(44, 156, 76);
+}
+.mainContentRight .filterDiv .filter.dropdownHighlight:hover
+{
+	background-color: rgb(243, 244, 246);
+}
+.mainContentRight .filterDiv input
+{
+	border-color: #E1E4E8;
+	border-radius: 5px;
+	border-style: none;
+	border-style: solid;
+	border-width: 1px;
+	flex-grow: 1;
+	padding: 0.5rem;
+}
+.mainContentRight .filterDiv input::placeholder
+{
+	font-weight: 500;
+}
+.mainContentRight .paginationContainer
+{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 4rem;
+	padding-top: 1rem;
+}
+.mainContentRight .paginationContainer div
+{
+	color: #0366D6;
+	font-size: 14px;
+	font-weight: 600;
+	padding-bottom: 0.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.5rem;
+}
+.mainContentRight .paginationContainer div:nth-child(1)
+{
+	border-bottom-left-radius: 10px;
+	border-color: #E0E2E2;
+	border-style: none;
+	border-style: solid;
+	border-top-left-radius: 10px;
+	border-width: 1px;
+	color: #0365d66b;
+}
+.mainContentRight .paginationContainer div:nth-child(2)
+{
+	border-bottom-right-radius: 10px;
+	border-color: #E0E2E2;
+	border-left-style: none;
+	border-style: none;
+	border-style: solid;
+	border-top-right-radius: 10px;
+	border-width: 1px;
+	cursor: pointer;
+}
+.mainContentRight .paginationContainer div:nth-child(2):hover
+{
+	background-color: #0366D6;
+	color: white;
+}
+.mainMobileMenu
+{
+	display: none;
+}
+.mobileNav
+{
+	display: none;
+}
+.menuModal
+{
+	background-color: white;
+	border-color: #E1E4E8;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	display: flex;
+	display: none;
+	flex-direction: column;
+}
+.menuModal div
+{
+	display: flex;
+	flex-direction: column;
+}
+.menuModal div .active svg
+{
+	visibility: visible;
+}
+.menuModal div div
+{
+	align-items: center;
+	flex-direction: row;
+	font-size: 14px;
+	font-weight: normal;
+	padding-bottom: 0.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.5rem;
+}
+.menuModal div div:hover
+{
+	background-color: #f4f6f8;
+}
+.menuModal div div p
+{
+	color: #3e444b;
+	font-size: 12px;
+	margin: 0px;
+	margin-left: 0.5rem;
+}
+.menuModal div div svg
+{
+	visibility: hidden;
+}
+.menuModal div hr
+{
+	margin: 0px;
+	width: 100%;
+}
+.menuModal .modalTopSection
+{
+	cursor: default;
+	flex-direction: row;
+	font-size: 12px;
+	justify-content: space-between;
+	padding-bottom: 0.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.5rem;
+}
+.menuModal .modalTopSection svg
+{
+	cursor: pointer;
+	fill: #B0B0B0;
+}
+.menuModal .modalTopSection svg:hover
+{
+	fill: #3e444b;
+}
+.profileNav
+{
+	display: flex;
+	display: inline-flex;
+	font-size: 14px;
+	padding-left: 32px;
+	width: 75%;
+}
+.profileNav .active p
+{
+	font-weight: 600;
+}
+.profileNav div div
+{
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	flex-grow: 1;
+	padding: 12px 16px;
+}
+.profileNav div div img
+{
+	height: 16px;
+	margin-right: 0.5rem;
+	width: 16px;
+}
+.profileNav div div p
+{
+	margin: 0px;
+}
+.profileNav div div span
+{
+	background-color: #E8EAEC;
+	border-bottom-style: none !important;
+	border-radius: 10px;
+	border-style: none;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 11px;
+	font-weight: 500;
+	margin-left: 0.5rem;
+	padding-bottom: 0.2rem;
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+	padding-top: 0.2rem;
+}
+.profileNav p
+{
+	color: #24292E;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-bottom: 0px;
+}
+.profileNavMobile
+{
+	display: none;
+}
+.profileNavPreSpace
+{
+	display: inline-flex;
+	width: 25%;
+}
+.profileNav .profileNavContainer
+{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.profileNav .profileNavContainer .activeLine
+{
+	border-color: #F9826C;
+}
+.profileNav .profileNavContainer .inactiveLine
+{
+	border-color: rgb(211, 215, 220);
+	opacity: 0;
+	transition: all 0.4s;
+}
+.profileNav .profileNavContainer span
+{
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	width: 100%;
+}
+.profileNav .profileNavContainer:hover span
+{
+	opacity: 1;
+}
+.profileNav .profileNavContainer svg
+{
+	fill: #959DA5;
+	margin-right: 0.5rem;
+}
+.profileTopArea
+{
+	background-color: white;
+	display: flex;
+}
+.profileTopContainer
+{
+	background-color: white;
+	position: sticky;
+	top: 0px;
+}
+.repoItemContainer
+{
+	padding-top: 1rem;
+}
+.repoItemContainer a
+{
+	color: #0366D6;
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-right: 0.6rem;
+	text-decoration: none;
+}
+.repoItemContainer a:hover
+{
+	text-decoration: underline;
+	text-decoration-line: underline;
+	text-decoration-thickness: 5px;
+}
+.repoItemContainer p
+{
+	color: #586069;
+	font-size: 14px;
+}
+.repoItemContainer .containerContent
+{
+	align-items: flex-start;
+	display: flex;
+}
+.repoItemContainer .containerLeft
+{
+	width: 75%;
+}
+.repoItemContainer .containerRight
+{
+	display: flex;
+	width: 25%;
+}
+.repoItemContainer .containerRight span
+{
+	align-items: center;
+	border-color: #D9DBDB;
+	border-radius: 7px;
+	border-style: none;
+	border-style: solid;
+	border-width: 1px;
+	cursor: pointer;
+	display: flex;
+	font-size: 12px;
+	font-weight: 600;
+	margin-left: auto;
+	padding-bottom: 0.2rem;
+	padding-left: 0.8rem;
+	padding-right: 0.8rem;
+	padding-top: 0.2rem;
+}
+.repoItemContainer .containerRight span:hover
+{
+	background-color: #f3f3f3;
+}
+.repoItemContainer .containerRight img
+{
+	height: 20px;
+	margin-right: 0.2rem;
+	width: 20px;
+}
+.repoItemContainer .privacyStatus
+{
+	border-color: #E1E4E8;
+	border-radius: 10px;
+	border-style: none;
+	border-style: solid;
+	border-width: 1px;
+	color: #586069;
+	font-size: 12px;
+	font-weight: 600;
+	padding-bottom: 1px;
+	padding-left: 0.3rem;
+	padding-right: 0.3rem;
+	padding-top: 1px;
+}
+.repoItemContainer .metaDataDiv
+{
+	align-items: center;
+	display: flex;
+}
+.repoItemContainer .metaDataDiv div
+{
+	align-items: center;
+	display: flex;
+	margin-right: 1rem;
+}
+.repoItemContainer .metaDataDiv div div
+{
+	margin-right: 0.2rem;
+}
+.repoItemContainer .metaDataDiv p
+{
+	font-size: 12px !important;
+}
+.webNav
+{
+	display: flex;
+}
+
+
+
+
+
+
+/* Media queries */
+
+
+@media (max-width: 770px)
+{
+	nav
+	{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 24px;
+		padding: 0.9rem;
+		padding-left: 1rem;
+		padding-right: 2rem;
+		width: 100%;
+	}
+	.filter
+	{
+		margin-top: 1rem;
+		padding-bottom: 0.5rem;
+		padding-top: 0.5rem;
+	}
+	.filter.primaryGreen
+	{
+		margin-left: auto !important;
+	}
+	footer
+	{
+		display: block;
+	}
+	footer .footerContent
+	{
+		display: inline;
+		text-align: center;
+	}
+	footer .footerContent a
+	{
+		font-size: 14px;
+		margin-right: 1rem;
+	}
+	footer .footerContent div
+	{
+		display: inline;
+	}
+	footer .footerContent div p
+	{
+		display: inline;
+		margin-left: none !important;
+		margin-right: 1rem;
+	}
+	footer .footerContent svg
+	{
+		display: none;
+	}
+	.avatarDivContainer
+	{
+		display: contents;
+	}
+	.filterDiv
+	{
+		box-sizing: border-box;
+		flex-wrap: wrap;
+		padding: 1rem;
+	}
+	.filterDiv input
+	{
+		box-sizing: border-box;
+	}
+	.highlightsDiv
+	{
+		display: none;
+	}
+	.locationDiv
+	{
+		display: none !important;
+	}
+	.mainContent
+	{
+		display: block;
+		padding: 0px;
+		width: 100%;
+	}
+	.mainContent .mainContentLeft .avatarDiv
+	{
+		border-radius: 50%;
+		display: inline-flex;
+		height: auto;
+		margin-right: 1rem;
+		overflow: hidden;
+		position: relative;
+		width: 20%;
+	}
+	.mainContent .mainContentLeft .avatarDiv div
+	{
+		display: none;
+	}
+	.mainContent .mainContentLeft .leftTopSection
+	{
+		align-items: center;
+		display: flex;
+	}
+	.mainContent .mainContentLeft .nameAndLoginDiv
+	{
+		display: inline-flex;
+		flex-direction: column;
+	}
+	.mainContentLeft
+	{
+		box-sizing: border-box;
+		padding: 1rem;
+		top: 0px;
+		width: 100%;
+	}
+	.mainContentRight
+	{
+		width: 100%;
+	}
+	.mainContentRight .filterDiv
+	{
+		display: block;
+	}
+	.mainContentRight .filterDiv .filter
+	{
+		display: inline-flex !important;
+		width: initial;
+	}
+	.mainContentRight .filterDiv input
+	{
+		border-color: #E1E4E8;
+		border-radius: 5px;
+		border-style: none;
+		border-style: solid;
+		border-width: 1px;
+		padding: 0.5rem;
+		width: 100%;
+	}
+	.mainMobileMenu
+	{
+		box-sizing: border-box;
+		flex-direction: column;
+		font-size: 14px;
+	}
+	.mainMobileMenu hr
+	{
+		border-color: #505050;
+		border-top-style: none;
+		height: 0px;
+		width: 100%;
+	}
+	.mainMobileMenu span
+	{
+		color: white;
+		display: flex;
+		flex-direction: column;
+	}
+	.mainMobileMenu input
+	{
+		background-color: rgba(0, 0, 0, 0);
+		border-color: #505050;
+		border-radius: 10px;
+		border-style: none;
+		border-style: solid;
+		border-width: 1px;
+		padding: 0.5rem;
+	}
+	.mainMobileMenu span span img
+	{
+		border-radius: 8px;
+		border-style: none;
+		height: 16px;
+		width: 16px;
+	}
+	.mainMobileMenu span span
+	{
+		align-items: center;
+		flex-direction: row;
+	}
+	.mainMobileMenu span span img, svg
+	{
+		margin-right: 0.5rem;
+	}
+	.menuModal
+	{
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		position: fixed;
+		right: 0;
+		top: 30%;
+		width: 90%;
+		z-index: 2000;
+	}
+	.menuModal div div
+	{
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+	}
+	.menuModal div div p
+	{
+		font-size: 16px;
+	}
+	.mobileMenuDivider
+	{
+		border-left-style: none;
+		border-right-style: none;
+		border-top-style: none;
+		border-width: 1px;
+		height: 0px;
+		margin: 0px;
+	}
+	.mobileNav
+	{
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
+		margin-bottom: 0px;
+	}
+	.overlay
+	{
+		background-color: rgba(0, 0, 0, 0.5);
+		display: none;
+		height: 100vh;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100vw;
+		z-index: 1000;
+	}
+	.profileNavMobile
+	{
+		background-color: white;
+		display: flex;
+		overflow-x: scroll;
+		padding: 0px;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+		position: sticky;
+		top: 0;
+		width: 100%;
+	}
+	.profileTopArea
+	{
+		display: none;
+	}
+	.repoItemContainer
+	{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.webNav
+	{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+@media (min-width: 771px) and (max-width: 1199.98px){
+
+	footer div p
+	{
+		color: #7C8083;
+		margin-left: 2rem;
+	}
+	.mainContent .mainContentLeft .avatarDiv
+	{
+		border-radius: 50%;
+		display: flex;
+		height: auto;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+	.mainContentRight .filterDiv .filter
+	{
+		margin-left: 1rem;
+		position: relative;
+	}
+	.menuModal
+	{
+		position: absolute;
+		right: 0px;
+		top: 140%;
+		width: 200%;
+	}
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1200px){
+	footer div p
+	{
+		color: #7C8083;
+		margin-left: 2rem;
+	}
+	.mainContent .mainContentLeft .avatarDiv
+	{
+		border-radius: 50%;
+		display: flex;
+		height: auto;
+		overflow: hidden;
+		width: 100%;
+	}
+	.mainContentRight .filterDiv .filter
+	{
+		margin-left: 1rem;
+		position: relative;
+	}
+	.menuModal
+	{
+		position: absolute;
+		right: 0px;
+		top: 140%;
+		width: 200%;
+	}
+}
