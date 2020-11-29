@@ -442,14 +442,14 @@ function check() {
     document.getElementById("stickyMenuUserDiv").style.opacity = "0"
     document.getElementById("profileNavPreSpace").style.backgroundColor =
       "rgba(0,0,0,0)";
-      document.getElementById("profileTopContainer").style.zIndex = "-1"
+
 
   } else {
     document.getElementById("stickyMenuUserDiv").style.height = "auto";
     document.getElementById("stickyMenuUserDiv").style.opacity = "1"
     document.getElementById("profileNavPreSpace").style.backgroundColor =
       "white";
-      document.getElementById("profileTopContainer").style.zIndex = "10"
+
   }
 }
 
