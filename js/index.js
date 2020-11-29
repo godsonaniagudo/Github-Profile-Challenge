@@ -10,6 +10,7 @@ const headers = {
   Authorization: "bearer " + githubDetails.token,
 };
 
+// Define Query
 const body = {
   query: `
     query { 
@@ -50,7 +51,8 @@ const body = {
 
 const baseUrl = "https://api.github.com/graphql";
 
-async function getDetails() {
+//Function to make fetch request to Github API
+const getDetails = async () => {
   const userDetails = await fetch(baseUrl, {
     method: "POST",
     headers,
@@ -59,8 +61,9 @@ async function getDetails() {
 
   details = await userDetails.json();
   setDetails();
-}
+};
 
+// make request to fetch user details from Github GraphQL API
 getDetails();
 
 //Load user details fetched from Github API into views
@@ -83,14 +86,18 @@ function setDetails() {
     details.data.user.websiteUrl;
   document.getElementById("accountTwitter").href =
     "https://twitter.com/" + details.data.user.twitterUsername;
-  document.getElementById("accountWebsite").href = `http://${details.data.user.websiteUrl}`;
   document.getElementById(
-    "accountRepositioriesCount"
-  ).innerHTML = 
-  details.data.user.repositories.totalCount;
+    "accountWebsite"
+  ).href = `http://${details.data.user.websiteUrl}`;
+  document.getElementById("accountRepositioriesCount").innerHTML =
+    details.data.user.repositories.totalCount;
   document.getElementById("menuProfilePic").src = details.data.user.avatarUrl;
   document.getElementById("avatar").src = details.data.user.avatarUrl;
   document.getElementById("mobileMenuLoginName").innerHTML =
+    details.data.user.login;
+  document.getElementById("stickyMenuProfilePic").src =
+    details.data.user.avatarUrl;
+  document.getElementById("stickyMenuLogin").innerHTML =
     details.data.user.login;
 
   details.data.user.repositories.nodes.forEach((item) =>
@@ -98,6 +105,7 @@ function setDetails() {
   );
 }
 
+//Create repository items and populate them with received data from API
 function createRepositoryItem(repoDetails) {
   const container = document.createElement("div");
   const containerContent = document.createElement("div");
@@ -184,6 +192,7 @@ function createRepositoryItem(repoDetails) {
 
   let lastUpdateText = "";
 
+  //Format last update text
   if (updatedSeconds === 0) {
     lastUpdateText = "Updated Just now";
   } else if (updatedSeconds === 1) {
@@ -227,19 +236,19 @@ function createRepositoryItem(repoDetails) {
     } ${updatedDate.getDate()} `;
   }
 
+  //Assign values to dynamic views
   titleText.innerHTML = repoDetails.name;
   privacyStatus.innerHTML = repoDetails.isPrivate ? "Private" : "";
   descriptionText.innerHTML = repoDetails.description;
   lastUpdatedText.innerHTML = lastUpdateText;
   starCountText.innerHTML = "Star";
-  starIcon.src = "https://res.cloudinary.com/theunfreed/image/upload/v1606102206/greystar_pqef5z.svg";
+  starIcon.src =
+    "https://res.cloudinary.com/theunfreed/image/upload/v1606102206/greystar_pqef5z.svg";
 
   titleText.href = "#";
 
   document.getElementById("repoListContainer").prepend(container);
 }
-
-
 
 //Handle hamburger menu click
 let showMenu = false;
@@ -293,7 +302,7 @@ window.addEventListener("click", function (evt) {
     actionsTriggerElement = document.getElementById("actionsDropdownContainer"),
     userElement = document.getElementById("userDropDown"),
     userTriggerElement = document.getElementById("userDropDownContainer"),
-    targetElement = evt.target; // clicked element
+    targetElement = evt.target;
 
   do {
     if (
@@ -304,8 +313,6 @@ window.addEventListener("click", function (evt) {
       targetElement == document.getElementById("typeSelector") ||
       targetElement == document.getElementById("languageSelector")
     ) {
-      // This is a click inside. Do nothing, just return.
-
       return;
     } else if (
       targetElement === document.getElementById("closeTypeModalButton") ||
@@ -317,11 +324,10 @@ window.addEventListener("click", function (evt) {
       showTypeModal = false;
       showLanguageModal = false;
     }
-    // Go up the DOM
+
     targetElement = targetElement.parentNode;
   } while (targetElement);
 
-  // This is a click outside.
   document.getElementById("actionsDropdown").style.display = "none";
   showActionsDropdown = false;
   document.getElementById("userDropDown").style.display = "none";
@@ -413,3 +419,36 @@ function closeEditProfileDiv() {
   document.getElementById("followersAndLocationDiv").style.display = "block";
   document.getElementsByClassName("editProfileDiv")[0].style.display = "none";
 }
+
+function isVisibleInViewport(elem) {
+  var y = elem.offsetTop;
+  var height = elem.offsetHeight;
+
+  while ((elem = elem.offsetParent)) y += elem.offsetTop;
+
+  var maxHeight = y + height;
+  var isVisible =
+    y < window.pageYOffset + window.innerHeight &&
+    maxHeight >= window.pageYOffset;
+  return isVisible;
+}
+
+function check() {
+  var canvas = document.getElementById("avatar");
+  if (isVisibleInViewport(canvas)) {
+    document.getElementById("stickyMenuUserDiv").style.height = "0";
+    document.getElementById("stickyMenuUserDiv").style.opacity = "0"
+    document.getElementById("profileNavPreSpace").style.backgroundColor =
+      "rgba(0,0,0,0)";
+      document.getElementById("profileTopContainer").style.zIndex = "-1"
+
+  } else {
+    document.getElementById("stickyMenuUserDiv").style.height = "auto";
+    document.getElementById("stickyMenuUserDiv").style.opacity = "1"
+    document.getElementById("profileNavPreSpace").style.backgroundColor =
+      "white";
+      document.getElementById("profileTopContainer").style.zIndex = "10"
+  }
+}
+
+window.addEventListener("scroll", check, false);

@@ -552,6 +552,7 @@ nav .topLeftNav svg
 	border-style: none;
 	height: 100%;
 	width: 100%;
+	z-index: 7000;
 }
 .mainContent .mainContentLeft .avatarDiv div
 {
@@ -927,6 +928,7 @@ h3
 	font-size: 14px;
 	padding-left: 32px;
 	width: 75%;
+	background-color: white;
 }
 .profileNav .active p
 {
@@ -979,6 +981,34 @@ h3
 {
 	display: inline-flex;
 	width: 25%;
+	position: relative;
+	z-index: 10000;
+}
+.profileNavPreSpace div 
+{
+	margin-left: 32px;
+	padding-left: 32px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	z-index: 6000;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.profileNavPreSpace div img {
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	margin-right: 0.5rem;
+
+}
+.profileNavPreSpace div a {
+	font-weight: 600;
+	color: #42464B;
+	
+	font-size: 14px;
 }
 .profileNav .profileNavContainer
 {
@@ -1021,6 +1051,7 @@ h3
 	background-color: white;
 	position: sticky;
 	top: 0px;
+	z-index: 6000;
 }
 .repoItemContainer
 {
@@ -1187,6 +1218,7 @@ h3
 	.avatarDivContainer
 	{
 		display: contents;
+		z-index: 2;
 	}
 	.filterDiv
 	{
