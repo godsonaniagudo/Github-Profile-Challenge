@@ -235,6 +235,8 @@ function createRepositoryItem(repoDetails) {
       months[updatedDate.getMonth()]
     } ${updatedDate.getDate()} `;
   }
+  
+  
 
   //Assign values to dynamic views
   titleText.innerHTML = repoDetails.name;
