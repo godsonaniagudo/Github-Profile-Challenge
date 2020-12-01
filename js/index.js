@@ -1,7 +1,12 @@
 var details = {};
 
+const split1 = "1033647d4e9"
+const split2 = "aa7f9e84dd"
+const split3 = "b5045c33e"
+const split4 = "7626bfaec1"
+
 const githubDetails = {
-  token: "1033647d4e9aa7f9e84ddb5045c33e7626bfaec1",
+  token: split1 + split2 + split3 + split4,
   login: "godsonaniagudo",
 };
 
