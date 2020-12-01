@@ -1,12 +1,10 @@
 var details = {};
 
-const split1 = "1033647d4e9"
-const split2 = "aa7f9e84dd"
-const split3 = "b5045c33e"
-const split4 = "7626bfaec1"
+const token = "OTdhODQ4NjlmNDNlOTc1NzUwMmJiOGQzNmNlOTFmOTczNDc0YzllNQ=="
+
 
 const githubDetails = {
-  token: split1 + split2 + split3 + split4,
+  token: atob(token),
   login: "godsonaniagudo",
 };
 
@@ -114,7 +112,6 @@ function setDetails() {
 
 //Create repository items and populate them with received data from API
 function createRepositoryItem(repoDetails) {
-  console.log(repoDetails.isPrivate);
   const container = document.createElement("div");
   const containerContent = document.createElement("div");
   const containerLeft = document.createElement("div");
