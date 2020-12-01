@@ -1,7 +1,7 @@
 var details = {};
 
 const githubDetails = {
-  token: "451f3934b8a7534c7983019cefcef52d4b4e4a8e",
+  token: "19ae2eb3f2d277b5aa910b08279227eb0da0b6e9",
   login: "godsonaniagudo",
 };
 
@@ -109,6 +109,7 @@ function setDetails() {
 
 //Create repository items and populate them with received data from API
 function createRepositoryItem(repoDetails) {
+  console.log(repoDetails.isPrivate);
   const container = document.createElement("div");
   const containerContent = document.createElement("div");
   const containerLeft = document.createElement("div");
@@ -242,7 +243,7 @@ function createRepositoryItem(repoDetails) {
 
   //Assign values to dynamic views
   titleText.innerHTML = repoDetails.name;
-  privacyStatus.innerHTML = repoDetails.isPrivate ? "Private" : "";
+  privacyStatus.innerHTML = repoDetails.isPrivate === true ? "Private" : "";
   descriptionText.innerHTML = repoDetails.description;
   lastUpdatedText.innerHTML = lastUpdateText;
   starCountText.innerHTML = "Star";
