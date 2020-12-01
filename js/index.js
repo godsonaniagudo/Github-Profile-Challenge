@@ -1,7 +1,7 @@
 var details = {};
 
 const githubDetails = {
-  token: "1146e93e8c39c93d1483427a643d54b16ae26530",
+  token: "2a7dc740cd0700add63514a74b91d7c1dc978111",
   login: "godsonaniagudo",
 };
 
@@ -50,6 +50,8 @@ const body = {
 };
 
 const baseUrl = "https://api.github.com/graphql";
+
+
 
 //Function to make fetch request to Github API
 const getDetails = async () => {
