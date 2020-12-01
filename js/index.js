@@ -1,7 +1,7 @@
 var details = {};
 
 const githubDetails = {
-  token: "eb38be079b16f8f161d14b9c9201587b99dfbb98",
+  token: "1146e93e8c39c93d1483427a643d54b16ae26530",
   login: "godsonaniagudo",
 };
 
